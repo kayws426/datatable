@@ -44,7 +44,7 @@ class FExpr_Frame : public FExpr {
     py::oobj container_;
     DataTable* dt_;
     bool ignore_names_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     static ptrExpr from_datatable(py::robj src);

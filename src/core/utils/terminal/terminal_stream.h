@@ -37,7 +37,7 @@ class TerminalStream {
     std::stack<TerminalStyle> stack_;
     TerminalStyle current_;
     bool use_colors_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     TerminalStream(bool use_colors);

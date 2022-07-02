@@ -33,7 +33,7 @@ class oby : public oobj
     private:
       oobj cols_;
       bool add_columns_;
-      size_t : 56;
+      size64_t : 56;
 
     public:
       void m__init__(const PKArgs&);

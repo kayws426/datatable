@@ -240,7 +240,7 @@ class MultiThreaded_OrderedJob : public OrderedJob {
     progress::work* progress_;
     NoopTask noop_task_;
     mutable dt::spin_mutex mutex_;  // 1 byte
-    size_t : 56;
+    size64_t : 56;
     size_t next_to_start_;
     size_t next_to_order_;
     size_t next_to_finish_;

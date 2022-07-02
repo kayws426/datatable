@@ -34,7 +34,7 @@ class FExpr_Re_Match : public FExpr_FuncUnary {
     std::string pattern_;
     std::regex regex_;
     bool icase_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     FExpr_Re_Match(ptrExpr&& arg, py::oobj pattern, py::oobj icase);

@@ -45,7 +45,7 @@ class HtmlWidget : public Widget {
   private:
     std::ostringstream html;
     int max_width_;
-    size_t : 32;
+    size64_t : 32;
 
   public:
     explicit HtmlWidget(DataTable* dt, int max_width)

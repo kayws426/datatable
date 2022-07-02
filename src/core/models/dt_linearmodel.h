@@ -59,7 +59,7 @@ class LinearModel : public LinearModelBase {
 
     // SType that corresponds to `T`
     SType stype_;
-    size_t : 16;
+    size64_t : 16;
 
     LearningRateSchedule eta_schedule_;
 

@@ -77,7 +77,7 @@ class write_manager {
     WritableBuffer::Strategy strategy;
     bool append_;
     bool write_header_;
-    size_t : 40;
+    size64_t : 40;
 
     // Runtime parameters
     write_chronicler chronicler;

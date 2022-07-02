@@ -94,7 +94,7 @@ class EvalContext
     DataTable* dt_;
     RowIndex   ri_;
     bool       natural_;  // was this frame joined naturally?
-    size_t : 56;
+    size64_t : 56;
 
     subframe(DataTable* dt, const RowIndex& ri, bool n)
       : dt_(dt), ri_(ri), natural_(n) {}
@@ -119,7 +119,7 @@ class EvalContext
     EvalMode   eval_mode_;
     bool       add_groupby_columns_;
     ModType    mod_type_;
-    size_t : 8;
+    size64_t : 8;
     NaPosition na_position_;
     std::vector<bool> reverse_;
 

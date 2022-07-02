@@ -45,7 +45,7 @@ class FrameInitializationManager {
     bool defined_names;
     bool defined_types;
     bool defined_type;
-    size_t : 40;
+    size64_t : 40;
     dt::Type type0;
     Frame* frame;
     colvec cols;

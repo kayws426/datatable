@@ -29,6 +29,7 @@
 #include <type_traits>  //
 #include <utility>      // std::move, std::pair
 #include <vector>       // std::vector
+#include "utils/macros.h"
 
 typedef struct _object     PyObject;
 typedef struct _typeobject PyTypeObject;

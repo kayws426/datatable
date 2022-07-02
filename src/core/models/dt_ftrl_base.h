@@ -53,7 +53,7 @@ struct FtrlParams {
   unsigned char mantissa_nbits;
   bool double_precision;
   bool negative_class;
-  size_t : 40;
+  size64_t : 40;
   FtrlParams() : model_type(FtrlModelType::AUTO),
                  alpha(0.005), beta(1.0), lambda1(0.0), lambda2(0.0),
                  nbins(1000000), nepochs(1.0), mantissa_nbits(10),

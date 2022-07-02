@@ -52,7 +52,7 @@ class FExpr_RowFn : public FExpr_Func {
   private:
     ptrExpr args_;
     bool process_void_cols_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     FExpr_RowFn(ptrExpr&& args, bool process_void_cols = false);

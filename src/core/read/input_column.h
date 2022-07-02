@@ -47,7 +47,7 @@ class InputColumn
     std::string name_;
     PT parse_type_;
     RT requested_type_;
-    size_t : 48;
+    size64_t : 48;
 
     // TODO: make OutputColumn completely separate from InputColumn
     OutputColumn outcol_;

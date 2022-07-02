@@ -39,7 +39,7 @@ class Ftrl : public XObject<Ftrl> {
     py::onamedtuple* py_params;
     strvec* colnames;
     bool double_precision;
-    size_t: 56;
+    size64_t: 56;
 
   public:
     // FTRL API version to be used for backward compatibility

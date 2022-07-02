@@ -51,7 +51,7 @@ class OutputColumn
     ColInfo colinfo_;
     SType stype_;
 
-    size_t : 56;
+    size64_t : 56;
 
   public:
     OutputColumn();

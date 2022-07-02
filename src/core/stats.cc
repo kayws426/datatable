@@ -631,7 +631,7 @@ void NumericStats<T>::compute_nunique() {
 
 
 struct StrHasher {
-  size_t operator()(const dt::CString& s) const {
+  uint64_t operator()(const dt::CString& s) const {
     return hash_murmur2(s.data(), s.size());
   }
 };

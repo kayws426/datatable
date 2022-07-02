@@ -85,7 +85,7 @@ class CutNbins_ColumnImpl : public Virtual_ColumnImpl {
     Column col_;
     double a_, b_;
     int32_t shift_;
-    size_t: 32;
+    size64_t: 32;
 
   public:
     static ColumnImpl* make(Column&& col, int32_t nbins, bool right_closed) {

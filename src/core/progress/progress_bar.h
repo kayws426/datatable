@@ -77,7 +77,7 @@ class progress_bar_enabled : public progress_bar {
     bool clear_on_success;
     bool use_colors;
     bool use_unicode;
-    size_t : 8;
+    size64_t : 8;
 
     // runtime support
     dtime_t update_interval;
@@ -88,7 +88,7 @@ class progress_bar_enabled : public progress_bar {
     py::oobj pyfn_external;
     bool visible;
     bool force_redraw;
-    size_t : 48;
+    size64_t : 48;
 
   public:
     progress_bar_enabled();

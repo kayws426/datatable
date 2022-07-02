@@ -97,7 +97,7 @@ class PKArgs : public ArgParent {
     const bool   has_varargs_;
     const bool   has_varkwds_;
     bool         has_renamed_args;
-    size_t : 40;
+    size64_t : 40;
     const std::vector<const char*> arg_names;
 
     // Runtime arguments

@@ -74,7 +74,7 @@ class Aggregator : public AggregatorBase {
     size_t max_dimensions;
     double fixed_delta;
     unsigned int seed;
-    size_t: 32;
+    size64_t: 32;
 
     // Number of threads used for parallelization.
     dt::NThreads nthreads;

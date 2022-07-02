@@ -702,7 +702,7 @@ template <size_t Alignment, class Alloc>
 void* Allocate(Alloc* alloc, size_t n) {
   static_assert(Alignment > 0, "");
   assert(n && "n must be positive");
-  struct alignas(Alignment) M { size_t : 64; };
+  struct alignas(Alignment) M { size64_t : 64; };
   using A = typename phmap::allocator_traits<Alloc>::template rebind_alloc<M>;
   using AT = typename phmap::allocator_traits<Alloc>::template rebind_traits<M>;
   A mem_alloc(*alloc);
@@ -720,7 +720,7 @@ template <size_t Alignment, class Alloc>
 void Deallocate(Alloc* alloc, void* p, size_t n) {
   static_assert(Alignment > 0, "");
   assert(n && "n must be positive");
-  struct alignas(Alignment) M { size_t : 64; };
+  struct alignas(Alignment) M { size64_t : 64; };
   using A = typename phmap::allocator_traits<Alloc>::template rebind_alloc<M>;
   using AT = typename phmap::allocator_traits<Alloc>::template rebind_traits<M>;
   A mem_alloc(*alloc);
@@ -2142,7 +2142,7 @@ private:
     size_t size_ = 0;                // number of full slots
     size_t capacity_ = 0;            // total number of slots
     HashtablezInfoHandle infoz_;
-    size_t : 56;
+    size64_t : 56;
     phmap::container_internal::CompressedTuple<size_t /* growth_left */, hasher,
                                               key_equal, allocator_type>
     settings_{0, hasher{}, key_equal{}, allocator_type{}};
@@ -2370,8 +2370,8 @@ public:
 
 protected:
     using Lockable = phmap::LockableImpl<Mtx_>;
-    size_t : 64;
-    size_t : 64;
+    size64_t : 64;
+    size64_t : 64;
 
     // --------------------------------------------------------------------
     struct alignas(64) Inner : public Lockable
@@ -2383,8 +2383,8 @@ protected:
         }
 
         EmbeddedSet set_;
-        size_t : 64;
-        size_t : 64;
+        size64_t : 64;
+        size64_t : 64;
     };
 
 private:
@@ -3284,12 +3284,12 @@ private:
         return sets_[0].set_.alloc_ref();
     }
 
-    size_t : 64;
-    size_t : 64;
-    size_t : 64;
-    size_t : 64;
-    size_t : 64;
-    size_t : 64;
+    size64_t : 64;
+    size64_t : 64;
+    size64_t : 64;
+    size64_t : 64;
+    size64_t : 64;
+    size64_t : 64;
     std::array<Inner, num_tables> sets_;
 };
 

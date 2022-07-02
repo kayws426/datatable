@@ -43,7 +43,7 @@ namespace dt {
 class Latent_ColumnImpl : public Virtual_ColumnImpl {
   private:
     mutable Column column_;
-    size_t : 64;
+    size64_t : 64;
 
   public:
     explicit Latent_ColumnImpl(ColumnImpl*);

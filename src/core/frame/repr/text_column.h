@@ -53,7 +53,7 @@ class TextColumn {
     bool    align_right_;
     bool    margin_left_;
     bool    margin_right_;
-    size_t : 40;
+    size64_t : 40;
 
     static const Terminal* term_;
     static tstring ellipsis_;

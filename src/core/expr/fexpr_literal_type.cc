@@ -208,7 +208,7 @@ class Type_TypeMatcher : public TypeMatcher {
 class SType_TypeMatcher : public TypeMatcher {
   private:
     SType targetSType_;
-    size_t : 56;
+    size64_t : 56;
   public:
     SType_TypeMatcher(SType stype) : targetSType_(stype) {}
     dt::Type convert(const dt::Type& inType) const override {
@@ -221,7 +221,7 @@ class LType_TypeMatcher : public TypeMatcher {
   private:
     LType targetLType_;
     SType targetSType_;
-    size_t : 48;
+    size64_t : 48;
   public:
     LType_TypeMatcher(LType ltype)
       : targetLType_(ltype),

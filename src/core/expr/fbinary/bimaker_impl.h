@@ -66,7 +66,7 @@ class bimaker1 : public bimaker
     SType uptype1_;
     SType uptype2_;
     SType outtype_;
-    size_t : 40;
+    size64_t : 40;
 
   public:
     bimaker1(func_t f, SType up1, SType up2, SType out)
@@ -111,7 +111,7 @@ class bimaker2 : public bimaker
     SType uptype1_;
     SType uptype2_;
     SType outtype_;
-    size_t : 40;
+    size64_t : 40;
 
   public:
     bimaker2(func_t f, SType up1, SType up2, SType out)

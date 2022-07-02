@@ -49,7 +49,7 @@ class ParserInfo {
     Type type_;
     PT id_;
     char code_;
-    size_t : 48;
+    size64_t : 48;
 
   public:
     ParserInfo() = default;

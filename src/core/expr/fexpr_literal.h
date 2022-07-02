@@ -49,7 +49,7 @@ class FExpr_Literal_None : public FExpr {
 class FExpr_Literal_Bool : public FExpr {
   private:
     bool value_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     explicit FExpr_Literal_Bool(bool x);

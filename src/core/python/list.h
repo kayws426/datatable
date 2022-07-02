@@ -43,7 +43,7 @@ namespace py {
 class olist : public oobj {
   private:
     bool is_list;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     olist() = default;

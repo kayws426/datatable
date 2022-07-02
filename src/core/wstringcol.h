@@ -41,7 +41,7 @@ class writable_string_col {
     Buffer offdata;
     size_t n;
     bool str64;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     writable_string_col(size_t nrows, bool str64_ = false);

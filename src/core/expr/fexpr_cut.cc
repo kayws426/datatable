@@ -41,7 +41,7 @@ class FExpr_Cut : public FExpr_Func {
     int32vec nbins_;
     std::vector<std::shared_ptr<dblvec>> bin_edges_;
     bool right_closed_;
-    size_t: 56;
+    size64_t: 56;
 
   public:
     FExpr_Cut(py::robj arg, int32vec&& nbins,

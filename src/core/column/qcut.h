@@ -62,7 +62,7 @@ class Qcut_ColumnImpl : public Virtual_ColumnImpl {
     Column col_;
     int32_t nquantiles_;
     bool is_const_;
-    size_t : 24;
+    size64_t : 24;
 
   public:
     Qcut_ColumnImpl(Column&& col, int32_t nquantiles, bool is_const = false)

@@ -94,7 +94,7 @@ class work {
     double pmin, pmax;
     progress_bar* pbar;  // borrowed ref
     bool message_set;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     explicit work(size_t amount);

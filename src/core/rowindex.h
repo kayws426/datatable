@@ -52,8 +52,8 @@ class RowIndex {
 
     static_assert(static_cast<int32_t>(size_t(NA<int32_t>)) == NA<int32_t>,
                   "Bad RowIndex::NA<int32_t>");
-    static_assert(int64_t(size_t(NA<int64_t>)) == NA<int64_t>,
-                  "Bad RowIndex::NA<int64_t>");
+    // static_assert(int64_t(size_t(NA<int64_t>)) == NA<int64_t>,
+    //               "Bad RowIndex::NA<int64_t>");
 
     static constexpr size_t MAX = size_t(-1) >> 1;
     static constexpr int ARR32 = 1;

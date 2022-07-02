@@ -2917,7 +2917,7 @@ protected:
 
 private:
     phmap::optional<allocator_type> alloc_;
-    size_t : 48;
+    size64_t : 48;
     mutable phmap::aligned_storage_t<sizeof(slot_type), alignof(slot_type)>
     slot_space_;
 };

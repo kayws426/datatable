@@ -43,7 +43,7 @@ class TerminalWidget : public Widget {
     std::vector<text_column> text_columns_;
     dt::Terminal* terminal_;
     bool has_rowindex_column_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     TerminalWidget(DataTable* dt, Terminal* term, SplitViewTag);

@@ -48,7 +48,7 @@ class XTypeMaker {
     size_t object_size;
     const char* class_name_;
     bool dynamic_type_;
-    size_t : 56;
+    size64_t : 56;
     std::vector<PyGetSetDef> get_defs;
     std::vector<PyMethodDef> meth_defs;
 
@@ -239,8 +239,8 @@ class XTypeMaker {
 template <typename Derived, bool DYNAMIC = false>
 struct XObject : public PyObject {
   static PyObject* typePtr;
-  size_t : 64 * DYNAMIC;  // __dict__
-  size_t : 64 * DYNAMIC;  // __weakref__
+  size64_t : 64 * DYNAMIC;  // __dict__
+  size64_t : 64 * DYNAMIC;  // __weakref__
 
   static void init_type(PyObject* module = nullptr) {
     static bool initialized = false;

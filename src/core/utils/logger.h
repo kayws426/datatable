@@ -74,7 +74,7 @@ class Logger {
     std::string prefix_;
     bool enabled_;
     bool use_colors_;
-    size_t : 48;
+    size64_t : 48;
 
   public:
     Logger();
@@ -135,7 +135,7 @@ class Message {
     std::ostringstream out_;
     Logger* logger_;
     bool emit_as_warning_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     Message(Logger*, bool warn);

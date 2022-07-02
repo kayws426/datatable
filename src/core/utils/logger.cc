@@ -54,7 +54,7 @@ class DefaultLogger : public XObject<DefaultLogger>
   private:
     std::unique_ptr<std::string> prefix_;
     bool use_colors_;
-    size_t : 56;
+    size64_t : 56;
 
     void m__init__(const PKArgs&) {}
 

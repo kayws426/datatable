@@ -42,7 +42,7 @@ struct output_options {
   bool booleans_as_words;
   bool bom;
   Quoting quoting_mode;
-  size_t : 16;
+  size64_t : 16;
 
   output_options()
     : compress_zlib(false),

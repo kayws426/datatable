@@ -174,7 +174,7 @@ class FwCmp : public Cmp {
     const Column& colJ;
     TJ x_value;   // Current value from X frame, converted to TJ type
     bool x_valid;
-    size_t : (64 - 8 * sizeof(TJ) - 8) & 63;
+    size64_t : (64 - 8 * sizeof(TJ) - 8) & 63;
 
   public:
     FwCmp(const Column&, const Column&);

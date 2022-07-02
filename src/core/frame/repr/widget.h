@@ -52,7 +52,7 @@ class Widget {
     size_t col0_, col1_;
     size_t row0_, row1_;
     bool is_split_view_;
-    size_t : 56;
+    size64_t : 56;
 
   protected:
     DataTable* dt_;
@@ -60,7 +60,7 @@ class Widget {
     std::vector<size_t> rowindices_;
     size_t ncols_, nrows_, nkeys_;
     bool render_row_indices_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     static constexpr size_t NA_index = size_t(-1);

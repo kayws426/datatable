@@ -64,7 +64,7 @@ struct LinearModelParams {
   double nepochs;
   bool double_precision;
   bool negative_class;
-  size_t : 16;
+  size64_t : 16;
   unsigned int seed;
   LinearModelParams() : model_type(LinearModelType::AUTO),
                         eta0(0.005), eta_decay(0.0001), eta_drop_rate(10.0),

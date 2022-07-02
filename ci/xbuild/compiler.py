@@ -139,7 +139,10 @@ class Compiler:
                                      "empty file" % (compiler, envvar))
                 self.executable = compiler
                 self.linker = compiler
+                self.path = os.environ.get("CC_BASE_DIR")
                 self.log.report_compiler_executable(compiler, env=envvar)
+                if sys.platform == "win32":
+                    self._detect_winsdk()
                 return
 
             if sys.platform == "win32":

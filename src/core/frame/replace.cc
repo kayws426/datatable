@@ -51,7 +51,7 @@ class ReplaceAgent {
     double xmin_real, xmax_real;
 
     bool columns_cast;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     explicit ReplaceAgent(DataTable* _dt)

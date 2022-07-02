@@ -22,6 +22,7 @@
 #ifndef dt_UTILS_MACROS_h
 #define dt_UTILS_MACROS_h
 #include <climits>
+#include <cstdint>
 #include <utility>  // std::move
 
 
@@ -103,8 +104,11 @@
 #endif
 
 #if DT_ARCH_X86_64 + DT_ARCH_PPC64_LE + DT_ARCH_AARCH64 != 1
-  #error Unknown Platform
+  // #error Unknown Platform
 #endif
+
+typedef uint64_t size64_t;
+typedef int64_t ssize64_t;
 
 
 

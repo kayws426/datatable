@@ -33,7 +33,7 @@ class FrameIterator : public XObject<FrameIterator>
     DataTable* dt;
     size_t iteration_index;
     bool reverse;
-    size_t : 56;
+    size64_t : 56;
 
     void m__init__(const PKArgs& args) {
       frame = args[0].to_oobj();

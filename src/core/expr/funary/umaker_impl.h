@@ -82,7 +82,7 @@ class umaker_copy : public umaker {
 class umaker_cast : public umaker {
   private:
     SType outtype_;
-    size_t : 56;
+    size64_t : 56;
 
   public:
     umaker_cast(SType out) : outtype_(out) {}
@@ -115,7 +115,7 @@ class umaker1 : public umaker
     func_t func_;
     SType uptype_;
     SType outtype_;
-    size_t : 48;
+    size64_t : 48;
 
   public:
     umaker1(func_t f, SType up, SType out)
@@ -161,7 +161,7 @@ class umaker2 : public umaker
     func_t func_;
     SType uptype_;
     SType outtype_;
-    size_t : 48;
+    size64_t : 48;
 
   public:
     umaker2(func_t f, SType up, SType out)

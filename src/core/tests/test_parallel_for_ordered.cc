@@ -60,7 +60,7 @@ static void ordered_simple(size_t niters, size_t nthreads)
       std::vector<int>& done_;
       std::atomic<size_t>& next_ordered_;
       std::atomic_flag executing_local_ = ATOMIC_FLAG_INIT;
-      size_t : 56;
+      size64_t : 56;
 
     public:
       OTask(std::atomic_flag& global,
